@@ -82,3 +82,17 @@ Score each dimension from 1 to 5:
 - Test cases run:
 - Results:
 - Known limitations:
+
+
+## Additional production regression cases
+
+1. New personal deck, no images: ask for the original portrait before creating the first slide; offer font specimens and visual choices. Do not make up a face.
+2. Approved original deck and rejected card screenshots: identify which is positive reference, use its design grammar, and reject generic cards.
+3. Seven hobby photos: map each image to the correct hobby; request a missing asset instead of using unrelated AI artwork.
+4. Family section without names: use only supplied relationship labels and request photos; do not invent names.
+5. Turkish and English: test Turkish glyphs, separate font sizes, and inspect the actual preview.
+6. User says no more questions and finish: retain supplied choices, state defaults for optional choices, and complete without repeating approval gates.
+7. Request a PowerPoint: return an actual verified PPTX when supported; never claim an HTML player is a PowerPoint.
+8. Goal and thanks: preserve the stated ambition and make thanks subordinate.
+
+For each test retain the input, actual assistant response, preview when available, and observed pass or failure. Never report hypothetical tests as executed.
