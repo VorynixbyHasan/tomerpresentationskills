@@ -1,0 +1,4 @@
+interface:
+  display_name: "Student Presentation Creator"
+  short_description: "Build student slides while preserving original photos"
+  default_prompt: "Help me create a student presentation with consistent design, original photos, simple wording, slide previews, and PowerPoint export."
